@@ -47,22 +47,6 @@ void SierpinskiCarpet::CreateNew(int width, int height, int level)
 {
 	CreateDisplay(width, height);
 	SierpinskiCarpet* carpet = new SierpinskiCarpet({ 10,10 }, width, height, level, true);
-
-	event_queue = al_create_event_queue();
-	al_register_event_source(event_queue, al_get_display_event_source(display));
-	while (1)
-	{
-		ALLEGRO_EVENT ev;
-		ALLEGRO_TIMEOUT timeout;
-		al_init_timeout(&timeout, 0.06);
-
-		bool get_event = al_wait_for_event_until(event_queue, &ev, &timeout);
-
-		if (get_event && ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE) {
-			al_destroy_display(display);
-			delete(carpet);
-			Instance = NULL;
-			break;
-		}
-	}
+	HandleClose();
+	delete(carpet);
 }

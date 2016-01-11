@@ -1,6 +1,6 @@
 #include "MenuWindow.h"
 #include "SierpinskiCarpet.h"
-#include <stdio.h>
+#include "CantorSet.h"
 
 int WINAPI WinMain(HINSTANCE hInstance, 
 				   HINSTANCE hPrevInstance, 
@@ -67,10 +67,15 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Msg, WPARAM wParam, LPARAM lParam)
 		switch (LOWORD(wParam))
 		{
 		case BN_CLICKED:
-			if (sierpinskiButton == (HWND)lParam)
+			if ((HWND)lParam == sierpinskiButton)
 			{
 				SierpinskiCarpet::CreateNew(603, 603, idSelected);
 			}
+			if ((HWND)lParam == cantorButton)
+			{
+				CantorSet::CreateNew(603, idSelected);
+			}
+
 			break;
 		}
 

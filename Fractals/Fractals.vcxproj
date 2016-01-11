@@ -27,6 +27,7 @@
   <ItemGroup>
     <ClInclude Include="AllegroWindow.h" />
     <ClInclude Include="CantorSet.h" />
+    <ClInclude Include="Fractal.h" />
     <ClInclude Include="SierpinskiCarpet.h" />
     <ClInclude Include="MenuWindow.h" />
   </ItemGroup>

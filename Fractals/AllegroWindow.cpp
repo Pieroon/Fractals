@@ -38,3 +38,23 @@ void AllegroWindow::CreateDisplay(int width, int height)
 	if(Instance == NULL)
 	Instance = new AllegroWindow(width, height);
 };
+
+void AllegroWindow::HandleClose()
+{
+	event_queue = al_create_event_queue();
+	al_register_event_source(event_queue, al_get_display_event_source(display));
+	while (1)
+	{
+		ALLEGRO_EVENT ev;
+		ALLEGRO_TIMEOUT timeout;
+		al_init_timeout(&timeout, 0.06);
+
+		bool get_event = al_wait_for_event_until(event_queue, &ev, &timeout);
+
+		if (get_event && ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE) {
+			al_destroy_display(display);
+			Instance = NULL;
+			break;
+		}
+	}
+}

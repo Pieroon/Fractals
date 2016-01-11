@@ -27,6 +27,9 @@
     <ClInclude Include="SierpinskiCarpet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Fractal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AllegroWindow.cpp">
