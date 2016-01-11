@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+      <FILENAME>menuwindow.h</FILENAME>
+      <LINE>7</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>28251</DEFECTCODE>
+    <DESCRIPTION>Inconsistent annotation for 'WinMain': this instance has no annotations. See c:\program files (x86)\windows kits\8.1\include\um\winbase.h(905). </DESCRIPTION>
+    <FUNCTION>WinMain</FUNCTION>
+    <DECORATED>WinMain@16</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH />
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+      <FILENAME>menuwindow.cpp</FILENAME>
+      <LINE>4</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>28251</DEFECTCODE>
+    <DESCRIPTION>Inconsistent annotation for 'WinMain': this instance has no annotations. See c:\program files (x86)\windows kits\8.1\include\um\winbase.h(905). Note: There are several prototypes for this function. This warning compares the first with instance number 3. </DESCRIPTION>
+    <FUNCTION>WinMain</FUNCTION>
+    <DECORATED>WinMain@16</DECORATED>
+    <FUNCLINE>4</FUNCLINE>
+    <PATH />
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+      <FILENAME>menuwindow.cpp</FILENAME>
+      <LINE>36</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>'hWnd' could be '0':  this does not adhere to the specification for the function 'ShowWindow'. </DESCRIPTION>
+    <FUNCTION>WinMain</FUNCTION>
+    <DECORATED>WinMain@16</DECORATED>
+    <FUNCLINE>4</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>9</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>10</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>12</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>14</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>29</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'hWnd' may be NULL (Enter this branch)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>31</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>32</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>33</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>36</LINE>
+        <COLUMN>11</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'hWnd' is an Input to 'ShowWindow' (declared at c:\program files (x86)\windows kits\8.1\include\um\winuser.h:4322)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>36</LINE>
+        <COLUMN>11</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'hWnd' should not be NULL, because this is not consistent with the SAL annotation on 'ShowWindow'</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+      <FILENAME>menuwindow.cpp</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>'hWnd' could be '0':  this does not adhere to the specification for the function 'UpdateWindow'. See line 36 for an earlier location where this can occur</DESCRIPTION>
+    <FUNCTION>WinMain</FUNCTION>
+    <DECORATED>WinMain@16</DECORATED>
+    <FUNCLINE>4</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>9</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>10</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>12</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>14</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>29</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'hWnd' may be NULL (Enter this branch)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>31</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>32</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>33</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>36</LINE>
+        <COLUMN>11</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'hWnd' is an Input to 'ShowWindow' (declared at c:\program files (x86)\windows kits\8.1\include\um\winuser.h:4322)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>37</LINE>
+        <COLUMN>13</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'hWnd' is an Input to 'UpdateWindow' (declared at c:\program files (x86)\windows kits\8.1\include\um\winuser.h:7998)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\documents\visual studio 2015\projects\fractals\fractals\</FILEPATH>
+        <FILENAME>menuwindow.cpp</FILENAME>
+        <LINE>37</LINE>
+        <COLUMN>13</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'hWnd' should not be NULL, because this is not consistent with the SAL annotation on 'UpdateWindow'</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>
